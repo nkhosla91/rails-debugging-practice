@@ -1,0 +1,12 @@
+
+<ul>
+  <%@spells.each do |spell| %>
+    <li>
+  <%=link_to spell.name, spell_path(spell.id)%>
+  </li>
+  <% end %>
+</ul>
+
+<p>
+<%=link_to "Make a new Spell!", new_spell_path%>
+</p>

@@ -1,9 +1,20 @@
-<h2 class="wizard_name"><%= @wizard.name %> </h2>
+<h2 class="wizard_name"><%= @wizard.name %> Age: <%= @wizard.age %> </h2>
+
 <div id="show_img"><%= image_tag(@wizard.image, id: "show_pic", size: "600x400")%></div><br /><br />
-<%= @wizard.spells.each do |spell| %>
+
+<%=link_to 'EDIT WIZARD', edit_wizard_path%>
+<br</br>
+<%=link_to 'DELETE WIZARD', destroy_wizard_path%>
+<br</br>
+<%=link_to 'ADD FAVORITE SPELL', add_spell_wizard_path%>
+
+<% @wizard.spells.each do |spell| %>
 <div id="wizard_show">
-  <p class="wizard_show">Spell Name: </p>
-  <p class="wizard_show">Description: </p>
+  <p class="wizard_show">Spell Name: <%=spell.name%> </p>
+
+  <p class="wizard_show">Description: <%=spell.description%> </p>
+ 
 </div>
+
 
 <% end %>

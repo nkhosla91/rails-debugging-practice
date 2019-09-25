@@ -1,5 +1,11 @@
 <ul>
   <% @wizards.each do |wizard| %>
+    <li>
   <%= image_tag(wizard.image, size: "350x300")%>
+  Name: <%=link_to wizard.name, wizard_path(wizard.id)%>
+  House: <%=wizard.house%>
+  Age: <%=wizard.age%>
+  </li>
   <% end %>
+  
 </ul>

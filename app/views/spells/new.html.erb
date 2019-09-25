@@ -1,0 +1,11 @@
+<h1> NEW SPELL!</h1>
+
+<%=form_for @spell do |s|%>
+    <li>
+    Name:        <%=s.text_field :name%>
+    </li>
+    <li>
+    Description: <%=s.text_area :description%>
+    </li>
+    <%=s.submit :submit%>
+<%end%>

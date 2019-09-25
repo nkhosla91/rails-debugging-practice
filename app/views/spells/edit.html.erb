@@ -1,0 +1,18 @@
+EDIT <%=@wizard.name%>
+
+<%=form_for @wizard do |w|%>
+    <li>
+    Name:       <%=w.text_field :name%>
+    </li>
+    <li>
+    Age:        <%=w.number_field :age%>
+    </li>
+    <li>
+    House:      <%=w.select :house, @houses%>
+    </li>
+    <li>
+    Image link: <%=w.text_field :image%>
+    </li>
+    <li>
+    <%=w.submit :submit%>
+<%end%>

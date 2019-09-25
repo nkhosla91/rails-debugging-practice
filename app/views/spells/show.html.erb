@@ -1,0 +1,12 @@
+<h2 class="spell_name"><%= @spell.name %> 
+
+<h3>Wizards who use <%= @spell.name %>:</h3>
+
+<%@wizard_ids.uniq.each do |id|%>
+    <%@wizards.each do |wizard|%>
+        <%if wizard.id == id%>
+            <li><%=wizard.name%></li>
+        <%end%>
+    <%end%>
+<%end%>
+
