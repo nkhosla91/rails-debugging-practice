@@ -24,6 +24,7 @@ class WizardsController < ApplicationController
 
   def edit
     @wizard = Wizard.find(params[:id])
+    # byebug
     @houses = ["Gryffindor", "Hufflepuff", "Slytherin", "Ravenclaw"]
   end
 
@@ -35,7 +36,6 @@ class WizardsController < ApplicationController
 
   def destroy
     @wizard = Wizard.find(params[:id])
-    byebug
     @wizard.favorite_spells.destroy_all
     @wizard.destroy
     redirect_to wizards_path

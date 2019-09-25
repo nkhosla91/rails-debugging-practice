@@ -19000,3 +19000,1968 @@ Completed 200 OK in 46ms (Views: 24.5ms | ActiveRecord: 2.4ms)
   ↳ db/seeds.rb:37
   [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
   ↳ db/seeds.rb:37
+Started GET "/spells" for ::1 at 2019-09-25 09:02:32 -0400
+Processing by SpellsController#index as HTML
+  [1m[36mSpell Load (0.2ms)[0m  [1m[34mSELECT "spells".* FROM "spells"[0m
+  ↳ app/controllers/spells_controller.rb:4
+  Rendering spells/index.html.erb within layouts/application
+  Rendered spells/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 68ms (Views: 66.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2019-09-25 09:02:33 -0400
+Processing by WizardsController#index as HTML
+  Rendering wizards/index.html.erb within layouts/application
+  [1m[36mWizard Load (0.2ms)[0m  [1m[34mSELECT "wizards".* FROM "wizards"[0m
+  ↳ app/views/wizards/index.html.erb:2
+  Rendered wizards/index.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 41ms (Views: 38.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/wizards" for ::1 at 2019-09-25 09:02:48 -0400
+Processing by WizardsController#index as HTML
+  Rendering wizards/index.html.erb within layouts/application
+  [1m[36mWizard Load (0.2ms)[0m  [1m[34mSELECT "wizards".* FROM "wizards"[0m
+  ↳ app/views/wizards/index.html.erb:2
+  Rendered wizards/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 38ms (Views: 35.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/wizards/157" for ::1 at 2019-09-25 09:03:19 -0400
+Processing by WizardsController#show as HTML
+  Parameters: {"id"=>"157"}
+  [1m[36mWizard Load (0.2ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 157], ["LIMIT", 1]]
+  ↳ app/controllers/wizards_controller.rb:10
+  Rendering wizards/show.html.erb within layouts/application
+  [1m[36mSpell Load (0.3ms)[0m  [1m[34mSELECT "spells".* FROM "spells" INNER JOIN "favorite_spells" ON "spells"."id" = "favorite_spells"."spell_id" WHERE "favorite_spells"."wizard_id" = ?[0m  [["wizard_id", 157]]
+  ↳ app/views/wizards/show.html.erb:11
+  Rendered wizards/show.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 51ms (Views: 46.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/wizards/157" for ::1 at 2019-09-25 09:03:21 -0400
+Processing by WizardsController#show as HTML
+  Parameters: {"id"=>"157"}
+  [1m[36mWizard Load (0.1ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 157], ["LIMIT", 1]]
+  ↳ app/controllers/wizards_controller.rb:10
+  Rendering wizards/show.html.erb within layouts/application
+  [1m[36mSpell Load (0.2ms)[0m  [1m[34mSELECT "spells".* FROM "spells" INNER JOIN "favorite_spells" ON "spells"."id" = "favorite_spells"."spell_id" WHERE "favorite_spells"."wizard_id" = ?[0m  [["wizard_id", 157]]
+  ↳ app/views/wizards/show.html.erb:11
+  Rendered wizards/show.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 33ms (Views: 30.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/wizards/157" for ::1 at 2019-09-25 09:03:24 -0400
+Processing by WizardsController#show as HTML
+  Parameters: {"id"=>"157"}
+  [1m[36mWizard Load (0.2ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 157], ["LIMIT", 1]]
+  ↳ app/controllers/wizards_controller.rb:10
+  Rendering wizards/show.html.erb within layouts/application
+  [1m[36mSpell Load (0.5ms)[0m  [1m[34mSELECT "spells".* FROM "spells" INNER JOIN "favorite_spells" ON "spells"."id" = "favorite_spells"."spell_id" WHERE "favorite_spells"."wizard_id" = ?[0m  [["wizard_id", 157]]
+  ↳ app/views/wizards/show.html.erb:11
+  Rendered wizards/show.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 38ms (Views: 33.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/wizards/157" for ::1 at 2019-09-25 09:03:28 -0400
+Processing by WizardsController#show as HTML
+  Parameters: {"id"=>"157"}
+  [1m[36mWizard Load (0.1ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 157], ["LIMIT", 1]]
+  ↳ app/controllers/wizards_controller.rb:10
+  Rendering wizards/show.html.erb within layouts/application
+  [1m[36mSpell Load (0.2ms)[0m  [1m[34mSELECT "spells".* FROM "spells" INNER JOIN "favorite_spells" ON "spells"."id" = "favorite_spells"."spell_id" WHERE "favorite_spells"."wizard_id" = ?[0m  [["wizard_id", 157]]
+  ↳ app/views/wizards/show.html.erb:11
+  Rendered wizards/show.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 36ms (Views: 33.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/wizards/157" for ::1 at 2019-09-25 09:04:34 -0400
+Processing by WizardsController#show as HTML
+  Parameters: {"id"=>"157"}
+  [1m[36mWizard Load (0.2ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 157], ["LIMIT", 1]]
+  ↳ app/controllers/wizards_controller.rb:10
+  Rendering wizards/show.html.erb within layouts/application
+  [1m[36mSpell Load (0.2ms)[0m  [1m[34mSELECT "spells".* FROM "spells" INNER JOIN "favorite_spells" ON "spells"."id" = "favorite_spells"."spell_id" WHERE "favorite_spells"."wizard_id" = ?[0m  [["wizard_id", 157]]
+  ↳ app/views/wizards/show.html.erb:11
+  Rendered wizards/show.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 35ms (Views: 31.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/wizards/157" for ::1 at 2019-09-25 09:04:36 -0400
+Processing by WizardsController#show as HTML
+  Parameters: {"id"=>"157"}
+  [1m[36mWizard Load (0.2ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 157], ["LIMIT", 1]]
+  ↳ app/controllers/wizards_controller.rb:10
+  Rendering wizards/show.html.erb within layouts/application
+  [1m[36mSpell Load (0.2ms)[0m  [1m[34mSELECT "spells".* FROM "spells" INNER JOIN "favorite_spells" ON "spells"."id" = "favorite_spells"."spell_id" WHERE "favorite_spells"."wizard_id" = ?[0m  [["wizard_id", 157]]
+  ↳ app/views/wizards/show.html.erb:11
+  Rendered wizards/show.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 32ms (Views: 28.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/wizards/157" for ::1 at 2019-09-25 09:05:32 -0400
+Processing by WizardsController#show as HTML
+  Parameters: {"id"=>"157"}
+  [1m[36mWizard Load (0.1ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 157], ["LIMIT", 1]]
+  ↳ app/controllers/wizards_controller.rb:10
+  Rendering wizards/show.html.erb within layouts/application
+  [1m[36mSpell Load (0.1ms)[0m  [1m[34mSELECT "spells".* FROM "spells" INNER JOIN "favorite_spells" ON "spells"."id" = "favorite_spells"."spell_id" WHERE "favorite_spells"."wizard_id" = ?[0m  [["wizard_id", 157]]
+  ↳ app/views/wizards/show.html.erb:11
+  Rendered wizards/show.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 36ms (Views: 25.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/wizards/157" for ::1 at 2019-09-25 09:05:34 -0400
+Processing by WizardsController#show as HTML
+  Parameters: {"id"=>"157"}
+  [1m[36mWizard Load (0.2ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 157], ["LIMIT", 1]]
+  ↳ app/controllers/wizards_controller.rb:10
+  Rendering wizards/show.html.erb within layouts/application
+  [1m[36mSpell Load (0.2ms)[0m  [1m[34mSELECT "spells".* FROM "spells" INNER JOIN "favorite_spells" ON "spells"."id" = "favorite_spells"."spell_id" WHERE "favorite_spells"."wizard_id" = ?[0m  [["wizard_id", 157]]
+  ↳ app/views/wizards/show.html.erb:11
+  Rendered wizards/show.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 29ms (Views: 26.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/wizards/157" for ::1 at 2019-09-25 09:06:01 -0400
+Processing by WizardsController#show as HTML
+  Parameters: {"id"=>"157"}
+  [1m[36mWizard Load (0.1ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 157], ["LIMIT", 1]]
+  ↳ app/controllers/wizards_controller.rb:10
+  Rendering wizards/show.html.erb within layouts/application
+  [1m[36mSpell Load (0.1ms)[0m  [1m[34mSELECT "spells".* FROM "spells" INNER JOIN "favorite_spells" ON "spells"."id" = "favorite_spells"."spell_id" WHERE "favorite_spells"."wizard_id" = ?[0m  [["wizard_id", 157]]
+  ↳ app/views/wizards/show.html.erb:11
+  Rendered wizards/show.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 77ms (Views: 32.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/schools" for ::1 at 2019-09-25 09:06:30 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/schools"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/rails/info/routes" for ::1 at 2019-09-25 09:06:34 -0400
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/flatironschool/.rvm/gems/ruby-2.6.1/gems/railties-5.2.3/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/flatironschool/.rvm/gems/ruby-2.6.1/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb [20 times] (13.1ms)
+  Rendered /Users/flatironschool/.rvm/gems/ruby-2.6.1/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.5ms)
+  Rendered /Users/flatironschool/.rvm/gems/ruby-2.6.1/gems/railties-5.2.3/lib/rails/templates/rails/info/routes.html.erb within layouts/application (24.8ms)
+Completed 200 OK in 32ms (Views: 29.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizards/157" for ::1 at 2019-09-25 09:10:28 -0400
+Processing by WizardsController#show as HTML
+  Parameters: {"id"=>"157"}
+  [1m[36mWizard Load (0.2ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 157], ["LIMIT", 1]]
+  ↳ app/controllers/wizards_controller.rb:10
+  Rendering wizards/show.html.erb within layouts/application
+  [1m[36mSpell Load (0.4ms)[0m  [1m[34mSELECT "spells".* FROM "spells" INNER JOIN "favorite_spells" ON "spells"."id" = "favorite_spells"."spell_id" WHERE "favorite_spells"."wizard_id" = ?[0m  [["wizard_id", 157]]
+  ↳ app/views/wizards/show.html.erb:11
+  Rendered wizards/show.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 37ms (Views: 33.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/wizards/157" for ::1 at 2019-09-25 09:10:36 -0400
+Processing by WizardsController#show as HTML
+  Parameters: {"id"=>"157"}
+  [1m[36mWizard Load (0.1ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 157], ["LIMIT", 1]]
+  ↳ app/controllers/wizards_controller.rb:10
+  Rendering wizards/show.html.erb within layouts/application
+  [1m[36mSpell Load (0.1ms)[0m  [1m[34mSELECT "spells".* FROM "spells" INNER JOIN "favorite_spells" ON "spells"."id" = "favorite_spells"."spell_id" WHERE "favorite_spells"."wizard_id" = ?[0m  [["wizard_id", 157]]
+  ↳ app/views/wizards/show.html.erb:11
+  Rendered wizards/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 23ms (Views: 20.5ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/wizards/:id" for ::1 at 2019-09-25 09:10:38 -0400
+Processing by WizardsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"VIAuCDaNWgqnFnOaDqU09VZY0WVcm4mCzLDvUaxHTxSIkbDZ6u3tHksUmXmQsZrgDZGIgh75TN/0bjluvTcN6w==", "id"=>":id"}
+  [1m[36mWizard Load (0.4ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/wizards_controller.rb:38
+Completed 404 Not Found in 19599ms (ActiveRecord: 0.4ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Wizard with 'id'=:id):
+  
+app/controllers/wizards_controller.rb:38:in `destroy'
+Started GET "/wizards/152/addspell" for ::1 at 2019-09-25 09:11:15 -0400
+Processing by FavoriteSpellsController#new as HTML
+  Parameters: {"id"=>"152"}
+  [1m[36mWizard Load (0.4ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 152], ["LIMIT", 1]]
+  ↳ app/controllers/favorite_spells_controller.rb:8
+Completed 404 Not Found in 3ms (ActiveRecord: 0.4ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Wizard with 'id'=152):
+  
+app/controllers/favorite_spells_controller.rb:8:in `new'
+Started GET "/wizards/" for ::1 at 2019-09-25 09:11:22 -0400
+Processing by WizardsController#index as HTML
+  Rendering wizards/index.html.erb within layouts/application
+  [1m[36mWizard Load (0.4ms)[0m  [1m[34mSELECT "wizards".* FROM "wizards"[0m
+  ↳ app/views/wizards/index.html.erb:2
+  Rendered wizards/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 31ms (Views: 28.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/wizards/158" for ::1 at 2019-09-25 09:11:24 -0400
+Processing by WizardsController#show as HTML
+  Parameters: {"id"=>"158"}
+  [1m[36mWizard Load (0.2ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 158], ["LIMIT", 1]]
+  ↳ app/controllers/wizards_controller.rb:10
+  Rendering wizards/show.html.erb within layouts/application
+  [1m[36mSpell Load (0.2ms)[0m  [1m[34mSELECT "spells".* FROM "spells" INNER JOIN "favorite_spells" ON "spells"."id" = "favorite_spells"."spell_id" WHERE "favorite_spells"."wizard_id" = ?[0m  [["wizard_id", 158]]
+  ↳ app/views/wizards/show.html.erb:11
+  Rendered wizards/show.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 80ms (Views: 76.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/wizards/158/addspell" for ::1 at 2019-09-25 09:11:26 -0400
+Processing by FavoriteSpellsController#new as HTML
+  Parameters: {"id"=>"158"}
+  [1m[36mWizard Load (0.2ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 158], ["LIMIT", 1]]
+  ↳ app/controllers/favorite_spells_controller.rb:8
+  Rendering favorite_spells/new.html.erb within layouts/application
+  [1m[36mSpell Load (0.3ms)[0m  [1m[34mSELECT "spells".* FROM "spells"[0m
+  ↳ app/views/favorite_spells/new.html.erb:4
+  Rendered favorite_spells/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 49ms (Views: 32.6ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/favoritespells" for ::1 at 2019-09-25 09:13:53 -0400
+Processing by FavoriteSpellsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NzGOm0Llk+3NVhczrqwLZXpD2LlKc/lil9+K4bBwcWhNuQ3gQ0QHjdzxxpnY/11+UgHKleOUSsJ38g0eL6dFbA==", "favorite_spell"=>{"spell_id"=>"230", "wizard_id"=>"158"}, "commit"=>"Add Spell to Repertoire"}
+Started GET "/wizards/158/addspell" for ::1 at 2019-09-25 09:14:38 -0400
+Started GET "/wizards/158/addspell" for ::1 at 2019-09-25 09:14:38 -0400
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/favorite_spells_controller.rb:15
+  [1m[36mWizard Load (0.2ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 158], ["LIMIT", 1]]
+  ↳ app/controllers/favorite_spells_controller.rb:15
+  [1m[36mSpell Load (0.3ms)[0m  [1m[34mSELECT  "spells".* FROM "spells" WHERE "spells"."id" = ? LIMIT ?[0m  [["id", 230], ["LIMIT", 1]]
+  ↳ app/controllers/favorite_spells_controller.rb:15
+  [1m[36mFavoriteSpell Create (0.6ms)[0m  [1m[32mINSERT INTO "favorite_spells" ("wizard_id", "spell_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wizard_id", 158], ["spell_id", 230], ["created_at", "2019-09-25 13:14:38.535014"], ["updated_at", "2019-09-25 13:14:38.535014"]]
+  ↳ app/controllers/favorite_spells_controller.rb:15
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/favorite_spells_controller.rb:15
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/favorite_spells_controller.rb:16
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/favorite_spells_controller.rb:16
+Redirected to http://localhost:3000/wizards/158
+Completed 302 Found in 44619ms (ActiveRecord: 3.9ms)
+
+
+Processing by FavoriteSpellsController#new as HTML
+Processing by FavoriteSpellsController#new as HTML
+  Parameters: {"id"=>"158"}
+  Parameters: {"id"=>"158"}
+  [1m[36mWizard Load (0.1ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 158], ["LIMIT", 1]]
+  [1m[36mWizard Load (0.2ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 158], ["LIMIT", 1]]
+  ↳ app/controllers/favorite_spells_controller.rb:8
+  ↳ app/controllers/favorite_spells_controller.rb:8
+  Rendering favorite_spells/new.html.erb within layouts/application
+  Rendering favorite_spells/new.html.erb within layouts/application
+  [1m[36mSpell Load (0.2ms)[0m  [1m[34mSELECT "spells".* FROM "spells"[0m
+  [1m[36mSpell Load (0.2ms)[0m  [1m[34mSELECT "spells".* FROM "spells"[0m
+  ↳ app/views/favorite_spells/new.html.erb:4
+  ↳ app/views/favorite_spells/new.html.erb:4
+  Rendered favorite_spells/new.html.erb within layouts/application (9.3ms)
+  Rendered favorite_spells/new.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 75ms (Views: 50.6ms | ActiveRecord: 1.8ms)
+
+
+Completed 200 OK in 79ms (Views: 55.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/favoritespells" for ::1 at 2019-09-25 09:14:41 -0400
+Processing by FavoriteSpellsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"B5XllDIVWsRokJg6gyB/NHvbBmyP0bFtmVWoRE1e18B9HWbvM7TOpHk3SZD1cykvU5kUQCY2As15eC+70onjxA==", "favorite_spell"=>{"spell_id"=>"230"}, "commit"=>"Add Spell to Repertoire"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/favorite_spells_controller.rb:15
+  [1m[36mSpell Load (0.1ms)[0m  [1m[34mSELECT  "spells".* FROM "spells" WHERE "spells"."id" = ? LIMIT ?[0m  [["id", 230], ["LIMIT", 1]]
+  ↳ app/controllers/favorite_spells_controller.rb:15
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/favorite_spells_controller.rb:15
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/favorite_spells_controller.rb:16
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/favorite_spells_controller.rb:16
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"wizards", :id=>nil}, missing required keys: [:id]):
+  
+app/controllers/favorite_spells_controller.rb:17:in `create'
+Started GET "/wizards" for ::1 at 2019-09-25 09:16:16 -0400
+Processing by WizardsController#index as HTML
+  Rendering wizards/index.html.erb within layouts/application
+  [1m[36mWizard Load (0.2ms)[0m  [1m[34mSELECT "wizards".* FROM "wizards"[0m
+  ↳ app/views/wizards/index.html.erb:2
+  Rendered wizards/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 38ms (Views: 33.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/wizards/157" for ::1 at 2019-09-25 09:16:19 -0400
+Processing by WizardsController#show as HTML
+  Parameters: {"id"=>"157"}
+  [1m[36mWizard Load (0.3ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 157], ["LIMIT", 1]]
+  ↳ app/controllers/wizards_controller.rb:10
+  Rendering wizards/show.html.erb within layouts/application
+  [1m[36mSpell Load (0.3ms)[0m  [1m[34mSELECT "spells".* FROM "spells" INNER JOIN "favorite_spells" ON "spells"."id" = "favorite_spells"."spell_id" WHERE "favorite_spells"."wizard_id" = ?[0m  [["wizard_id", 157]]
+  ↳ app/views/wizards/show.html.erb:11
+  Rendered wizards/show.html.erb within layouts/application (26.8ms)
+Completed 200 OK in 55ms (Views: 46.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/wizards/157/addspell" for ::1 at 2019-09-25 09:16:20 -0400
+Processing by FavoriteSpellsController#new as HTML
+  Parameters: {"id"=>"157"}
+  [1m[36mWizard Load (0.2ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 157], ["LIMIT", 1]]
+  ↳ app/controllers/favorite_spells_controller.rb:8
+  Rendering favorite_spells/new.html.erb within layouts/application
+  [1m[36mSpell Load (0.2ms)[0m  [1m[34mSELECT "spells".* FROM "spells"[0m
+  ↳ app/views/favorite_spells/new.html.erb:4
+  Rendered favorite_spells/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 43ms (Views: 30.1ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/favoritespells" for ::1 at 2019-09-25 09:16:22 -0400
+Processing by FavoriteSpellsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"L4irrOKbh4UX5RDt431NpfO3xB/fL9mNAbkBr5T/II5VACjX4zoT5QZCwUeVLhu+2/XWM3bIai3hlIZQCygUig==", "favorite_spell"=>{"spell_id"=>"230"}, "commit"=>"Add Spell to Repertoire"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/favorite_spells_controller.rb:15
+  [1m[36mSpell Load (0.3ms)[0m  [1m[34mSELECT  "spells".* FROM "spells" WHERE "spells"."id" = ? LIMIT ?[0m  [["id", 230], ["LIMIT", 1]]
+  ↳ app/controllers/favorite_spells_controller.rb:15
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/favorite_spells_controller.rb:15
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/favorite_spells_controller.rb:16
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/favorite_spells_controller.rb:16
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"wizards", :id=>nil}, missing required keys: [:id]):
+  
+app/controllers/favorite_spells_controller.rb:17:in `create'
+Started GET "/favoritespells" for ::1 at 2019-09-25 09:16:37 -0400
+Processing by FavoriteSpellsController#index as HTML
+  Rendering favorite_spells/index.html.erb within layouts/application
+  Rendered favorite_spells/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 45ms (Views: 42.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/favoritespells" for ::1 at 2019-09-25 09:16:40 -0400
+Processing by FavoriteSpellsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"r5hnDjtsfUqNyW2VdPu0wTdrfmWsrI67lQ7fiGJgWUpzifnf5wzKXmHLh3bq7xrUbKIngu7OS+at0Am3cxAbtQ==", "favorite_spell"=>{"spell_id"=>"230"}, "commit"=>"Add Spell to Repertoire"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/favorite_spells_controller.rb:15
+  [1m[36mSpell Load (0.1ms)[0m  [1m[34mSELECT  "spells".* FROM "spells" WHERE "spells"."id" = ? LIMIT ?[0m  [["id", 230], ["LIMIT", 1]]
+  ↳ app/controllers/favorite_spells_controller.rb:15
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/favorite_spells_controller.rb:15
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/favorite_spells_controller.rb:16
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/favorite_spells_controller.rb:16
+Completed 500 Internal Server Error in 36322ms (ActiveRecord: 1.4ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"wizards", :id=>nil}, missing required keys: [:id]):
+  
+app/controllers/favorite_spells_controller.rb:18:in `create'
+Started POST "/favoritespells" for ::1 at 2019-09-25 09:17:21 -0400
+Processing by FavoriteSpellsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"r5hnDjtsfUqNyW2VdPu0wTdrfmWsrI67lQ7fiGJgWUpzifnf5wzKXmHLh3bq7xrUbKIngu7OS+at0Am3cxAbtQ==", "favorite_spell"=>{"spell_id"=>"230"}, "commit"=>"Add Spell to Repertoire"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/favorite_spells_controller.rb:15
+  [1m[36mSpell Load (0.3ms)[0m  [1m[34mSELECT  "spells".* FROM "spells" WHERE "spells"."id" = ? LIMIT ?[0m  [["id", 230], ["LIMIT", 1]]
+  ↳ app/controllers/favorite_spells_controller.rb:15
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/favorite_spells_controller.rb:15
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/favorite_spells_controller.rb:16
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/favorite_spells_controller.rb:16
+Completed 500 Internal Server Error in 67669ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"wizards", :id=>nil}, missing required keys: [:id]):
+  
+app/controllers/favorite_spells_controller.rb:18:in `create'
+Started POST "/favoritespells" for ::1 at 2019-09-25 09:20:01 -0400
+  
+SyntaxError (/Users/flatironschool/Documents/RAILS RAILS RAILS/rails-debugging-practice/app/controllers/favorite_spells_controller.rb:11: syntax error, unexpected ':', expecting end
+        flash: @wizard
+             ^):
+  
+app/controllers/favorite_spells_controller.rb:11: syntax error, unexpected ':', expecting end
+Started POST "/favoritespells" for ::1 at 2019-09-25 09:20:41 -0400
+Processing by FavoriteSpellsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"r5hnDjtsfUqNyW2VdPu0wTdrfmWsrI67lQ7fiGJgWUpzifnf5wzKXmHLh3bq7xrUbKIngu7OS+at0Am3cxAbtQ==", "favorite_spell"=>{"spell_id"=>"230"}, "commit"=>"Add Spell to Repertoire"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/favorite_spells_controller.rb:16
+  [1m[36mSpell Load (0.1ms)[0m  [1m[34mSELECT  "spells".* FROM "spells" WHERE "spells"."id" = ? LIMIT ?[0m  [["id", 230], ["LIMIT", 1]]
+  ↳ app/controllers/favorite_spells_controller.rb:16
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/favorite_spells_controller.rb:16
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/favorite_spells_controller.rb:17
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/favorite_spells_controller.rb:17
+Completed 500 Internal Server Error in 20143ms (ActiveRecord: 1.3ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"wizards", :id=>nil}, missing required keys: [:id]):
+  
+app/controllers/favorite_spells_controller.rb:19:in `create'
+Started GET "/wizards/157" for ::1 at 2019-09-25 09:21:01 -0400
+Processing by WizardsController#show as HTML
+  Parameters: {"id"=>"157"}
+  [1m[36mWizard Load (0.2ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 157], ["LIMIT", 1]]
+  ↳ app/controllers/wizards_controller.rb:10
+  Rendering wizards/show.html.erb within layouts/application
+  [1m[36mSpell Load (0.4ms)[0m  [1m[34mSELECT "spells".* FROM "spells" INNER JOIN "favorite_spells" ON "spells"."id" = "favorite_spells"."spell_id" WHERE "favorite_spells"."wizard_id" = ?[0m  [["wizard_id", 157]]
+  ↳ app/views/wizards/show.html.erb:11
+  Rendered wizards/show.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 47ms (Views: 33.3ms | ActiveRecord: 1.2ms)
+
+
+Started DELETE "/wizards/:id" for ::1 at 2019-09-25 09:21:06 -0400
+Processing by WizardsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"FYo3eMBFdi1r/6KOT/IO0QQfPp/KDUMiyUN3X2eYRoPJm6mpHCXBOYf9SG3R5qDEX9ZneIhvhn/xnaFgdugEfA==", "id"=>":id"}
+  [1m[36mWizard Load (0.2ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/wizards_controller.rb:38
+Completed 404 Not Found in 17496ms (ActiveRecord: 0.9ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Wizard with 'id'=:id):
+  
+app/controllers/wizards_controller.rb:38:in `destroy'
+Started GET "/wizards/:id" for ::1 at 2019-09-25 09:21:28 -0400
+Processing by WizardsController#show as HTML
+  Parameters: {"id"=>":id"}
+  [1m[36mWizard Load (0.1ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/wizards_controller.rb:10
+Completed 404 Not Found in 6ms (ActiveRecord: 0.7ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Wizard with 'id'=:id):
+  
+app/controllers/wizards_controller.rb:10:in `show'
+Started GET "/wizards" for ::1 at 2019-09-25 09:21:30 -0400
+Processing by WizardsController#index as HTML
+  Rendering wizards/index.html.erb within layouts/application
+  [1m[36mWizard Load (1.3ms)[0m  [1m[34mSELECT "wizards".* FROM "wizards"[0m
+  ↳ app/views/wizards/index.html.erb:2
+  Rendered wizards/index.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 83ms (Views: 78.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/wizards/158" for ::1 at 2019-09-25 09:21:32 -0400
+Processing by WizardsController#show as HTML
+  Parameters: {"id"=>"158"}
+  [1m[36mWizard Load (0.4ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 158], ["LIMIT", 1]]
+  ↳ app/controllers/wizards_controller.rb:10
+  Rendering wizards/show.html.erb within layouts/application
+  [1m[36mSpell Load (0.3ms)[0m  [1m[34mSELECT "spells".* FROM "spells" INNER JOIN "favorite_spells" ON "spells"."id" = "favorite_spells"."spell_id" WHERE "favorite_spells"."wizard_id" = ?[0m  [["wizard_id", 158]]
+  ↳ app/views/wizards/show.html.erb:11
+  Rendered wizards/show.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 62ms (Views: 55.2ms | ActiveRecord: 3.4ms)
+
+
+Started DELETE "/wizards/:id" for ::1 at 2019-09-25 09:21:34 -0400
+Processing by WizardsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"UORSF1h2TCVWcHNU0RKetLtYABb0bRA9e28AfkZttL+M9czGhBb7MbpymbdPBjCh4JFZ8bYP1WBDsdZBVx32QA==", "id"=>":id"}
+  [1m[36mWizard Load (0.2ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/wizards_controller.rb:38
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Wizard with 'id'=:id):
+  
+app/controllers/wizards_controller.rb:38:in `destroy'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatironschool/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[36mFavoriteSpell Load (0.3ms)[0m  [1m[34mSELECT "favorite_spells".* FROM "favorite_spells"[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[36mFavoriteSpell Destroy (0.8ms)[0m  [1m[31mDELETE FROM "favorite_spells" WHERE "favorite_spells"."id" = ?[0m  [["id", 60]]
+  ↳ db/seeds.rb:1
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[36mFavoriteSpell Destroy (0.4ms)[0m  [1m[31mDELETE FROM "favorite_spells" WHERE "favorite_spells"."id" = ?[0m  [["id", 61]]
+  ↳ db/seeds.rb:1
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[36mFavoriteSpell Destroy (0.5ms)[0m  [1m[31mDELETE FROM "favorite_spells" WHERE "favorite_spells"."id" = ?[0m  [["id", 62]]
+  ↳ db/seeds.rb:1
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[36mFavoriteSpell Destroy (0.5ms)[0m  [1m[31mDELETE FROM "favorite_spells" WHERE "favorite_spells"."id" = ?[0m  [["id", 63]]
+  ↳ db/seeds.rb:1
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[36mFavoriteSpell Destroy (0.4ms)[0m  [1m[31mDELETE FROM "favorite_spells" WHERE "favorite_spells"."id" = ?[0m  [["id", 64]]
+  ↳ db/seeds.rb:1
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.8ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[36mFavoriteSpell Destroy (0.4ms)[0m  [1m[31mDELETE FROM "favorite_spells" WHERE "favorite_spells"."id" = ?[0m  [["id", 65]]
+  ↳ db/seeds.rb:1
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[36mFavoriteSpell Destroy (0.6ms)[0m  [1m[31mDELETE FROM "favorite_spells" WHERE "favorite_spells"."id" = ?[0m  [["id", 66]]
+  ↳ db/seeds.rb:1
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[36mFavoriteSpell Destroy (0.8ms)[0m  [1m[31mDELETE FROM "favorite_spells" WHERE "favorite_spells"."id" = ?[0m  [["id", 67]]
+  ↳ db/seeds.rb:1
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[36mFavoriteSpell Destroy (0.7ms)[0m  [1m[31mDELETE FROM "favorite_spells" WHERE "favorite_spells"."id" = ?[0m  [["id", 68]]
+  ↳ db/seeds.rb:1
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[36mFavoriteSpell Destroy (0.7ms)[0m  [1m[31mDELETE FROM "favorite_spells" WHERE "favorite_spells"."id" = ?[0m  [["id", 69]]
+  ↳ db/seeds.rb:1
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[36mFavoriteSpell Destroy (0.7ms)[0m  [1m[31mDELETE FROM "favorite_spells" WHERE "favorite_spells"."id" = ?[0m  [["id", 70]]
+  ↳ db/seeds.rb:1
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[36mFavoriteSpell Destroy (0.8ms)[0m  [1m[31mDELETE FROM "favorite_spells" WHERE "favorite_spells"."id" = ?[0m  [["id", 71]]
+  ↳ db/seeds.rb:1
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[36mFavoriteSpell Destroy (0.8ms)[0m  [1m[31mDELETE FROM "favorite_spells" WHERE "favorite_spells"."id" = ?[0m  [["id", 72]]
+  ↳ db/seeds.rb:1
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[36mFavoriteSpell Destroy (0.5ms)[0m  [1m[31mDELETE FROM "favorite_spells" WHERE "favorite_spells"."id" = ?[0m  [["id", 73]]
+  ↳ db/seeds.rb:1
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[36mFavoriteSpell Destroy (0.4ms)[0m  [1m[31mDELETE FROM "favorite_spells" WHERE "favorite_spells"."id" = ?[0m  [["id", 74]]
+  ↳ db/seeds.rb:1
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[36mFavoriteSpell Destroy (0.4ms)[0m  [1m[31mDELETE FROM "favorite_spells" WHERE "favorite_spells"."id" = ?[0m  [["id", 75]]
+  ↳ db/seeds.rb:1
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[36mFavoriteSpell Destroy (0.4ms)[0m  [1m[31mDELETE FROM "favorite_spells" WHERE "favorite_spells"."id" = ?[0m  [["id", 76]]
+  ↳ db/seeds.rb:1
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[36mSpell Load (16.3ms)[0m  [1m[34mSELECT "spells".* FROM "spells"[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:2
+  [1m[36mSpell Destroy (0.4ms)[0m  [1m[31mDELETE FROM "spells" WHERE "spells"."id" = ?[0m  [["id", 230]]
+  ↳ db/seeds.rb:2
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:2
+  [1m[36mSpell Destroy (0.4ms)[0m  [1m[31mDELETE FROM "spells" WHERE "spells"."id" = ?[0m  [["id", 231]]
+  ↳ db/seeds.rb:2
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:2
+  [1m[36mSpell Destroy (0.4ms)[0m  [1m[31mDELETE FROM "spells" WHERE "spells"."id" = ?[0m  [["id", 232]]
+  ↳ db/seeds.rb:2
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:2
+  [1m[36mSpell Destroy (0.4ms)[0m  [1m[31mDELETE FROM "spells" WHERE "spells"."id" = ?[0m  [["id", 233]]
+  ↳ db/seeds.rb:2
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:2
+  [1m[36mSpell Destroy (0.7ms)[0m  [1m[31mDELETE FROM "spells" WHERE "spells"."id" = ?[0m  [["id", 234]]
+  ↳ db/seeds.rb:2
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:2
+  [1m[36mSpell Destroy (0.5ms)[0m  [1m[31mDELETE FROM "spells" WHERE "spells"."id" = ?[0m  [["id", 235]]
+  ↳ db/seeds.rb:2
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:2
+  [1m[36mSpell Destroy (0.5ms)[0m  [1m[31mDELETE FROM "spells" WHERE "spells"."id" = ?[0m  [["id", 236]]
+  ↳ db/seeds.rb:2
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:2
+  [1m[36mSpell Destroy (0.5ms)[0m  [1m[31mDELETE FROM "spells" WHERE "spells"."id" = ?[0m  [["id", 237]]
+  ↳ db/seeds.rb:2
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:2
+  [1m[36mWizard Load (0.2ms)[0m  [1m[34mSELECT "wizards".* FROM "wizards"[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:3
+  [1m[36mWizard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "wizards" WHERE "wizards"."id" = ?[0m  [["id", 157]]
+  ↳ db/seeds.rb:3
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:3
+  [1m[36mWizard Destroy (0.4ms)[0m  [1m[31mDELETE FROM "wizards" WHERE "wizards"."id" = ?[0m  [["id", 158]]
+  ↳ db/seeds.rb:3
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:3
+  [1m[36mWizard Destroy (0.4ms)[0m  [1m[31mDELETE FROM "wizards" WHERE "wizards"."id" = ?[0m  [["id", 159]]
+  ↳ db/seeds.rb:3
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:3
+  [1m[36mWizard Destroy (0.4ms)[0m  [1m[31mDELETE FROM "wizards" WHERE "wizards"."id" = ?[0m  [["id", 160]]
+  ↳ db/seeds.rb:3
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:3
+  [1m[36mWizard Destroy (0.4ms)[0m  [1m[31mDELETE FROM "wizards" WHERE "wizards"."id" = ?[0m  [["id", 161]]
+  ↳ db/seeds.rb:3
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:5
+  [1m[36mWizard Create (0.5ms)[0m  [1m[32mINSERT INTO "wizards" ("name", "house", "age", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Harry Potter"], ["house", "Gryffindor"], ["age", 17], ["created_at", "2019-09-25 13:22:02.305533"], ["updated_at", "2019-09-25 13:22:02.305533"], ["image", "http://www.univers-series.com/wp-content/uploads/2016/02/harrypotter.jpeg"]]
+  ↳ db/seeds.rb:5
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:5
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:6
+  [1m[36mWizard Create (0.4ms)[0m  [1m[32mINSERT INTO "wizards" ("name", "house", "age", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Hermione Granger"], ["house", "Gryffindor"], ["age", 17], ["created_at", "2019-09-25 13:22:02.308977"], ["updated_at", "2019-09-25 13:22:02.308977"], ["image", "https://wallpapersite.com/images/pages/pic_w/8936.jpg"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:7
+  [1m[36mWizard Create (0.4ms)[0m  [1m[32mINSERT INTO "wizards" ("name", "house", "age", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Ron Weasley"], ["house", "Gryffindor"], ["age", 17], ["created_at", "2019-09-25 13:22:02.311840"], ["updated_at", "2019-09-25 13:22:02.311840"], ["image", "http://images4.fanpop.com/image/photos/23000000/DH-Part-II-ronald-weasley-23081519-500-296.jpg"]]
+  ↳ db/seeds.rb:7
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:7
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[36mWizard Create (0.7ms)[0m  [1m[32mINSERT INTO "wizards" ("name", "house", "age", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Draco Malfoy"], ["house", "Slytherin"], ["age", 17], ["created_at", "2019-09-25 13:22:02.315490"], ["updated_at", "2019-09-25 13:22:02.315490"], ["image", "https://cdn.movieweb.com/img.news.tops/NEh934QRmEyekk_2_b/Tom-Felton-Draco-Malfoy-No-More-Harry-Potter.jpg"]]
+  ↳ db/seeds.rb:8
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mWizard Create (0.6ms)[0m  [1m[32mINSERT INTO "wizards" ("name", "house", "age", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Severus Snape"], ["house", "Slytherin"], ["age", 38], ["created_at", "2019-09-25 13:22:02.320529"], ["updated_at", "2019-09-25 13:22:02.320529"], ["image", "https://vignette.wikia.nocookie.net/villains/images/1/12/Snape-will-never-die-severus-snape-22970808-1600-2118.jpg/revision/latest?cb=20170304205903"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mSpell Create (0.5ms)[0m  [1m[32mINSERT INTO "spells" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Expelliarmus"], ["description", "Basically the only spell Harry ever uses when he's in a duel"], ["created_at", "2019-09-25 13:22:02.324910"], ["updated_at", "2019-09-25 13:22:02.324910"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mSpell Create (0.4ms)[0m  [1m[32mINSERT INTO "spells" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Expecto Patronum"], ["description", "Gets rid of pesky Dementors by summoning a badass Patronus to chase them away"], ["created_at", "2019-09-25 13:22:02.327955"], ["updated_at", "2019-09-25 13:22:02.327955"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mSpell Create (0.4ms)[0m  [1m[32mINSERT INTO "spells" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Alohomora"], ["description", "That one Hermione keeps using to unlock doors when they go sneaking around in the first book"], ["created_at", "2019-09-25 13:22:02.332825"], ["updated_at", "2019-09-25 13:22:02.332825"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[36mSpell Create (0.4ms)[0m  [1m[32mINSERT INTO "spells" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Wingardium Leviosa"], ["description", "Makes things levitate. Sounds fun."], ["created_at", "2019-09-25 13:22:02.336646"], ["updated_at", "2019-09-25 13:22:02.336646"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[36mSpell Create (0.5ms)[0m  [1m[32mINSERT INTO "spells" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Accio"], ["description", "The perfect charm for lazy people who can't be bothered to get up and fetch the TV remote"], ["created_at", "2019-09-25 13:22:02.340586"], ["updated_at", "2019-09-25 13:22:02.340586"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[36mSpell Create (0.5ms)[0m  [1m[32mINSERT INTO "spells" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Obliviate"], ["description", "The charm Gilderoy Lockhart uses to accidentally wipe his own memory, the big buffoon"], ["created_at", "2019-09-25 13:22:02.344774"], ["updated_at", "2019-09-25 13:22:02.344774"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mSpell Create (0.4ms)[0m  [1m[32mINSERT INTO "spells" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Sectumsempra"], ["description", "A mouthful of a curse invented by troubled teen Severus Snape"], ["created_at", "2019-09-25 13:22:02.347964"], ["updated_at", "2019-09-25 13:22:02.347964"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mSpell Create (0.5ms)[0m  [1m[32mINSERT INTO "spells" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Crucio"], ["description", "Basically torture in a kids book"], ["created_at", "2019-09-25 13:22:02.352638"], ["updated_at", "2019-09-25 13:22:02.352638"]]
+  ↳ db/seeds.rb:18
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (1.6ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mWizard Load (0.3ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 162], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mSpell Load (0.1ms)[0m  [1m[34mSELECT  "spells".* FROM "spells" WHERE "spells"."id" = ? LIMIT ?[0m  [["id", 238], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mFavoriteSpell Create (0.5ms)[0m  [1m[32mINSERT INTO "favorite_spells" ("wizard_id", "spell_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wizard_id", 162], ["spell_id", 238], ["created_at", "2019-09-25 13:22:02.385434"], ["updated_at", "2019-09-25 13:22:02.385434"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:23
+  [1m[36mWizard Load (0.1ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 162], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mSpell Load (0.1ms)[0m  [1m[34mSELECT  "spells".* FROM "spells" WHERE "spells"."id" = ? LIMIT ?[0m  [["id", 239], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mFavoriteSpell Create (0.5ms)[0m  [1m[32mINSERT INTO "favorite_spells" ("wizard_id", "spell_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wizard_id", 162], ["spell_id", 239], ["created_at", "2019-09-25 13:22:02.400363"], ["updated_at", "2019-09-25 13:22:02.400363"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (1.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[36mWizard Load (0.1ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 163], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mSpell Load (0.1ms)[0m  [1m[34mSELECT  "spells".* FROM "spells" WHERE "spells"."id" = ? LIMIT ?[0m  [["id", 238], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mFavoriteSpell Create (0.5ms)[0m  [1m[32mINSERT INTO "favorite_spells" ("wizard_id", "spell_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wizard_id", 163], ["spell_id", 238], ["created_at", "2019-09-25 13:22:02.413046"], ["updated_at", "2019-09-25 13:22:02.413046"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:25
+  [1m[36mWizard Load (0.2ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 163], ["LIMIT", 1]]
+  ↳ db/seeds.rb:25
+  [1m[36mSpell Load (0.1ms)[0m  [1m[34mSELECT  "spells".* FROM "spells" WHERE "spells"."id" = ? LIMIT ?[0m  [["id", 239], ["LIMIT", 1]]
+  ↳ db/seeds.rb:25
+  [1m[36mFavoriteSpell Create (0.6ms)[0m  [1m[32mINSERT INTO "favorite_spells" ("wizard_id", "spell_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wizard_id", 163], ["spell_id", 239], ["created_at", "2019-09-25 13:22:02.424017"], ["updated_at", "2019-09-25 13:22:02.424017"]]
+  ↳ db/seeds.rb:25
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:26
+  [1m[36mWizard Load (0.1ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 163], ["LIMIT", 1]]
+  ↳ db/seeds.rb:26
+  [1m[36mSpell Load (0.1ms)[0m  [1m[34mSELECT  "spells".* FROM "spells" WHERE "spells"."id" = ? LIMIT ?[0m  [["id", 240], ["LIMIT", 1]]
+  ↳ db/seeds.rb:26
+  [1m[36mFavoriteSpell Create (0.5ms)[0m  [1m[32mINSERT INTO "favorite_spells" ("wizard_id", "spell_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wizard_id", 163], ["spell_id", 240], ["created_at", "2019-09-25 13:22:02.432171"], ["updated_at", "2019-09-25 13:22:02.432171"]]
+  ↳ db/seeds.rb:26
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:27
+  [1m[36mWizard Load (0.2ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 163], ["LIMIT", 1]]
+  ↳ db/seeds.rb:27
+  [1m[36mSpell Load (0.1ms)[0m  [1m[34mSELECT  "spells".* FROM "spells" WHERE "spells"."id" = ? LIMIT ?[0m  [["id", 241], ["LIMIT", 1]]
+  ↳ db/seeds.rb:27
+  [1m[36mFavoriteSpell Create (0.5ms)[0m  [1m[32mINSERT INTO "favorite_spells" ("wizard_id", "spell_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wizard_id", 163], ["spell_id", 241], ["created_at", "2019-09-25 13:22:02.441119"], ["updated_at", "2019-09-25 13:22:02.441119"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:28
+  [1m[36mWizard Load (0.1ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 163], ["LIMIT", 1]]
+  ↳ db/seeds.rb:28
+  [1m[36mSpell Load (0.1ms)[0m  [1m[34mSELECT  "spells".* FROM "spells" WHERE "spells"."id" = ? LIMIT ?[0m  [["id", 242], ["LIMIT", 1]]
+  ↳ db/seeds.rb:28
+  [1m[36mFavoriteSpell Create (1.8ms)[0m  [1m[32mINSERT INTO "favorite_spells" ("wizard_id", "spell_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wizard_id", 163], ["spell_id", 242], ["created_at", "2019-09-25 13:22:02.448632"], ["updated_at", "2019-09-25 13:22:02.448632"]]
+  ↳ db/seeds.rb:28
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:28
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:29
+  [1m[36mWizard Load (0.1ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 163], ["LIMIT", 1]]
+  ↳ db/seeds.rb:29
+  [1m[36mSpell Load (0.1ms)[0m  [1m[34mSELECT  "spells".* FROM "spells" WHERE "spells"."id" = ? LIMIT ?[0m  [["id", 243], ["LIMIT", 1]]
+  ↳ db/seeds.rb:29
+  [1m[36mFavoriteSpell Create (0.5ms)[0m  [1m[32mINSERT INTO "favorite_spells" ("wizard_id", "spell_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wizard_id", 163], ["spell_id", 243], ["created_at", "2019-09-25 13:22:02.456991"], ["updated_at", "2019-09-25 13:22:02.456991"]]
+  ↳ db/seeds.rb:29
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:30
+  [1m[36mWizard Load (0.1ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 163], ["LIMIT", 1]]
+  ↳ db/seeds.rb:30
+  [1m[36mSpell Load (0.1ms)[0m  [1m[34mSELECT  "spells".* FROM "spells" WHERE "spells"."id" = ? LIMIT ?[0m  [["id", 244], ["LIMIT", 1]]
+  ↳ db/seeds.rb:30
+  [1m[36mFavoriteSpell Create (0.5ms)[0m  [1m[32mINSERT INTO "favorite_spells" ("wizard_id", "spell_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wizard_id", 163], ["spell_id", 244], ["created_at", "2019-09-25 13:22:02.463812"], ["updated_at", "2019-09-25 13:22:02.463812"]]
+  ↳ db/seeds.rb:30
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:30
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mWizard Load (0.1ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 164], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mSpell Load (0.2ms)[0m  [1m[34mSELECT  "spells".* FROM "spells" WHERE "spells"."id" = ? LIMIT ?[0m  [["id", 242], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mFavoriteSpell Create (0.6ms)[0m  [1m[32mINSERT INTO "favorite_spells" ("wizard_id", "spell_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wizard_id", 164], ["spell_id", 242], ["created_at", "2019-09-25 13:22:02.470093"], ["updated_at", "2019-09-25 13:22:02.470093"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[36mWizard Load (0.1ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 165], ["LIMIT", 1]]
+  ↳ db/seeds.rb:32
+  [1m[36mSpell Load (0.0ms)[0m  [1m[34mSELECT  "spells".* FROM "spells" WHERE "spells"."id" = ? LIMIT ?[0m  [["id", 245], ["LIMIT", 1]]
+  ↳ db/seeds.rb:32
+  [1m[36mFavoriteSpell Create (0.5ms)[0m  [1m[32mINSERT INTO "favorite_spells" ("wizard_id", "spell_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wizard_id", 165], ["spell_id", 245], ["created_at", "2019-09-25 13:22:02.475210"], ["updated_at", "2019-09-25 13:22:02.475210"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:33
+  [1m[36mWizard Load (0.1ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 165], ["LIMIT", 1]]
+  ↳ db/seeds.rb:33
+  [1m[36mSpell Load (0.1ms)[0m  [1m[34mSELECT  "spells".* FROM "spells" WHERE "spells"."id" = ? LIMIT ?[0m  [["id", 238], ["LIMIT", 1]]
+  ↳ db/seeds.rb:33
+  [1m[36mFavoriteSpell Create (0.5ms)[0m  [1m[32mINSERT INTO "favorite_spells" ("wizard_id", "spell_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wizard_id", 165], ["spell_id", 238], ["created_at", "2019-09-25 13:22:02.480922"], ["updated_at", "2019-09-25 13:22:02.480922"]]
+  ↳ db/seeds.rb:33
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mWizard Load (0.1ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 166], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mSpell Load (0.1ms)[0m  [1m[34mSELECT  "spells".* FROM "spells" WHERE "spells"."id" = ? LIMIT ?[0m  [["id", 243], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mFavoriteSpell Create (0.5ms)[0m  [1m[32mINSERT INTO "favorite_spells" ("wizard_id", "spell_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wizard_id", 166], ["spell_id", 243], ["created_at", "2019-09-25 13:22:02.487939"], ["updated_at", "2019-09-25 13:22:02.487939"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:35
+  [1m[36mWizard Load (0.1ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 166], ["LIMIT", 1]]
+  ↳ db/seeds.rb:35
+  [1m[36mSpell Load (0.0ms)[0m  [1m[34mSELECT  "spells".* FROM "spells" WHERE "spells"."id" = ? LIMIT ?[0m  [["id", 239], ["LIMIT", 1]]
+  ↳ db/seeds.rb:35
+  [1m[36mFavoriteSpell Create (0.4ms)[0m  [1m[32mINSERT INTO "favorite_spells" ("wizard_id", "spell_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wizard_id", 166], ["spell_id", 239], ["created_at", "2019-09-25 13:22:02.494459"], ["updated_at", "2019-09-25 13:22:02.494459"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:35
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mWizard Load (0.1ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 166], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mSpell Load (0.0ms)[0m  [1m[34mSELECT  "spells".* FROM "spells" WHERE "spells"."id" = ? LIMIT ?[0m  [["id", 244], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mFavoriteSpell Create (0.6ms)[0m  [1m[32mINSERT INTO "favorite_spells" ("wizard_id", "spell_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wizard_id", 166], ["spell_id", 244], ["created_at", "2019-09-25 13:22:02.498968"], ["updated_at", "2019-09-25 13:22:02.498968"]]
+  ↳ db/seeds.rb:36
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:37
+  [1m[36mWizard Load (0.2ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 166], ["LIMIT", 1]]
+  ↳ db/seeds.rb:37
+  [1m[36mSpell Load (0.0ms)[0m  [1m[34mSELECT  "spells".* FROM "spells" WHERE "spells"."id" = ? LIMIT ?[0m  [["id", 245], ["LIMIT", 1]]
+  ↳ db/seeds.rb:37
+  [1m[36mFavoriteSpell Create (0.4ms)[0m  [1m[32mINSERT INTO "favorite_spells" ("wizard_id", "spell_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wizard_id", 166], ["spell_id", 245], ["created_at", "2019-09-25 13:22:02.504251"], ["updated_at", "2019-09-25 13:22:02.504251"]]
+  ↳ db/seeds.rb:37
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:37
+Started GET "/wizards" for ::1 at 2019-09-25 09:22:16 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatironschool/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by WizardsController#index as HTML
+  Rendering wizards/index.html.erb within layouts/application
+  [1m[36mWizard Load (0.2ms)[0m  [1m[34mSELECT "wizards".* FROM "wizards"[0m
+  ↳ app/views/wizards/index.html.erb:2
+  Rendered wizards/index.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 261ms (Views: 248.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/wizards/162" for ::1 at 2019-09-25 09:22:18 -0400
+Processing by WizardsController#show as HTML
+  Parameters: {"id"=>"162"}
+  [1m[36mWizard Load (0.4ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 162], ["LIMIT", 1]]
+  ↳ app/controllers/wizards_controller.rb:10
+  Rendering wizards/show.html.erb within layouts/application
+  [1m[36mSpell Load (0.5ms)[0m  [1m[34mSELECT "spells".* FROM "spells" INNER JOIN "favorite_spells" ON "spells"."id" = "favorite_spells"."spell_id" WHERE "favorite_spells"."wizard_id" = ?[0m  [["wizard_id", 162]]
+  ↳ app/views/wizards/show.html.erb:11
+  Rendered wizards/show.html.erb within layouts/application (50.1ms)
+Completed 200 OK in 77ms (Views: 68.1ms | ActiveRecord: 2.2ms)
+
+
+Started DELETE "/wizards/:id" for ::1 at 2019-09-25 09:22:19 -0400
+Processing by WizardsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/xuWIT3k9UT09aPyTHVXaw/+2MuCZ8YVVr/p7xKShrsjCgjw4YRCUBj3SRHSYfl+VDeBLMAFA0huYT/QA+LERA==", "id"=>":id"}
+  [1m[36mWizard Load (0.1ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/wizards_controller.rb:38
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Wizard with 'id'=:id):
+  
+app/controllers/wizards_controller.rb:38:in `destroy'
+Started DELETE "/wizards/:id" for ::1 at 2019-09-25 09:22:34 -0400
+Processing by WizardsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/xuWIT3k9UT09aPyTHVXaw/+2MuCZ8YVVr/p7xKShrsjCgjw4YRCUBj3SRHSYfl+VDeBLMAFA0huYT/QA+LERA==", "id"=>":id"}
+  [1m[36mWizard Load (0.2ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ (byebug):1
+  [1m[36mCACHE Wizard Load (0.0ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/wizards_controller.rb:38
+Completed 404 Not Found in 19950ms (ActiveRecord: 1.6ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Wizard with 'id'=:id):
+  
+app/controllers/wizards_controller.rb:38:in `destroy'
+Started GET "/wizards/162/edit" for ::1 at 2019-09-25 09:22:58 -0400
+Processing by WizardsController#edit as HTML
+  Parameters: {"id"=>"162"}
+  [1m[36mWizard Load (0.2ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 162], ["LIMIT", 1]]
+  ↳ app/controllers/wizards_controller.rb:26
+  Rendering wizards/edit.html.erb within layouts/application
+  Rendered wizards/edit.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 54ms (Views: 37.2ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/wizards/162" for ::1 at 2019-09-25 09:23:00 -0400
+Processing by WizardsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FYLMzpG5m25lHeGfCcCyezG0dyEHiUE0NsNyJFhxZTURiy0pKeLo7b4cIyyWT4abAeplKXb0GF80eG1BrH9f7A==", "wizard"=>{"name"=>"Harry Potter", "age"=>"20", "house"=>"Gryffindor", "image"=>"http://www.univers-series.com/wp-content/uploads/2016/02/harrypotter.jpeg"}, "commit"=>"submit", "id"=>"162"}
+  [1m[36mWizard Load (0.2ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 162], ["LIMIT", 1]]
+  ↳ app/controllers/wizards_controller.rb:31
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/wizards_controller.rb:32
+  [1m[36mWizard Update (0.6ms)[0m  [1m[33mUPDATE "wizards" SET "age" = ?, "updated_at" = ? WHERE "wizards"."id" = ?[0m  [["age", 20], ["updated_at", "2019-09-25 13:23:00.885244"], ["id", 162]]
+  ↳ app/controllers/wizards_controller.rb:32
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/wizards_controller.rb:32
+Redirected to http://localhost:3000/wizards/162
+Completed 302 Found in 8ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/wizards/162" for ::1 at 2019-09-25 09:23:00 -0400
+Processing by WizardsController#show as HTML
+  Parameters: {"id"=>"162"}
+  [1m[36mWizard Load (0.2ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 162], ["LIMIT", 1]]
+  ↳ app/controllers/wizards_controller.rb:10
+  Rendering wizards/show.html.erb within layouts/application
+  [1m[36mSpell Load (0.2ms)[0m  [1m[34mSELECT "spells".* FROM "spells" INNER JOIN "favorite_spells" ON "spells"."id" = "favorite_spells"."spell_id" WHERE "favorite_spells"."wizard_id" = ?[0m  [["wizard_id", 162]]
+  ↳ app/views/wizards/show.html.erb:11
+  Rendered wizards/show.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 37ms (Views: 34.4ms | ActiveRecord: 1.1ms)
+
+
+Started DELETE "/wizards/:id" for ::1 at 2019-09-25 09:23:14 -0400
+Processing by WizardsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ZdXriHsZuNzZ6Lf7XaqBDHCP5X7UAx2657eQju00N8y5xHVZp3kPyDXqXRjDvi8ZK0a8mZZh2OffaUax/ER1Mw==", "id"=>":id"}
+  [1m[36mWizard Load (0.3ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/wizards_controller.rb:38
+Completed 404 Not Found in 37789ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Wizard with 'id'=:id):
+Started GET "/wizards/162/edit" for ::1 at 2019-09-25 09:23:52 -0400
+  
+app/controllers/wizards_controller.rb:38:in `destroy'
+Processing by WizardsController#edit as HTML
+  Parameters: {"id"=>"162"}
+  [1m[36mWizard Load (0.2ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 162], ["LIMIT", 1]]
+  ↳ app/controllers/wizards_controller.rb:26
+  Rendering wizards/edit.html.erb within layouts/application
+  Rendered wizards/edit.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 52ms (Views: 49.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/wizards/162" for ::1 at 2019-09-25 09:23:58 -0400
+Processing by WizardsController#show as HTML
+  Parameters: {"id"=>"162"}
+  [1m[36mWizard Load (0.2ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 162], ["LIMIT", 1]]
+  ↳ app/controllers/wizards_controller.rb:10
+  Rendering wizards/show.html.erb within layouts/application
+  [1m[36mSpell Load (0.2ms)[0m  [1m[34mSELECT "spells".* FROM "spells" INNER JOIN "favorite_spells" ON "spells"."id" = "favorite_spells"."spell_id" WHERE "favorite_spells"."wizard_id" = ?[0m  [["wizard_id", 162]]
+  ↳ app/views/wizards/show.html.erb:11
+  Rendered wizards/show.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 48ms (Views: 31.4ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/wizards/162/edit" for ::1 at 2019-09-25 09:24:00 -0400
+Processing by WizardsController#edit as HTML
+  Parameters: {"id"=>"162"}
+  [1m[36mWizard Load (0.2ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 162], ["LIMIT", 1]]
+  ↳ app/controllers/wizards_controller.rb:26
+Started DELETE "/wizards/:id" for ::1 at 2019-09-25 09:25:26 -0400
+Started GET "/wizards/162/edit" for ::1 at 2019-09-25 09:25:26 -0400
+Started GET "/wizards/162" for ::1 at 2019-09-25 09:25:26 -0400
+Processing by WizardsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"MFLve0BC++M206CyrBDi7AJOhpu9YjLj5TEv1N9LDT/sQ3GqnCJM99rRSlEyBEz5WYfffP8A977d7/nrzjtPwA==", "id"=>":id"}
+  Rendering wizards/edit.html.erb within layouts/application
+Processing by WizardsController#edit as HTML
+  [1m[36mWizard Load (0.5ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  Rendered wizards/edit.html.erb within layouts/application (2.9ms)
+Started DELETE "/wizards/:id" for ::1 at 2019-09-25 09:25:36 -0400
+  ↳ app/controllers/wizards_controller.rb:39
+Processing by WizardsController#show as HTML
+  Parameters: {"id"=>"162"}
+Completed 404 Not Found in 10326ms (ActiveRecord: 0.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Wizard with 'id'=:id):
+  
+  [1m[36mWizard Load (0.3ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 162], ["LIMIT", 1]]
+  ↳ app/controllers/wizards_controller.rb:10
+  Parameters: {"id"=>"162"}
+  [1m[36mWizard Load (0.3ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 162], ["LIMIT", 1]]
+  ↳ app/controllers/wizards_controller.rb:26
+app/controllers/wizards_controller.rb:39:in `destroy'
+Completed 500 Internal Server Error in 8122ms (ActiveRecord: 0.3ms)
+
+
+  
+SystemExit (exit):
+  Rendering wizards/show.html.erb within layouts/application
+  
+  [1m[36mSpell Load (1.1ms)[0m  [1m[34mSELECT "spells".* FROM "spells" INNER JOIN "favorite_spells" ON "spells"."id" = "favorite_spells"."spell_id" WHERE "favorite_spells"."wizard_id" = ?[0m  [["wizard_id", 162]]
+(byebug):1:in `exit'
+(byebug):1:in `edit'
+app/controllers/wizards_controller.rb:28:in `edit'
+  ↳ app/views/wizards/show.html.erb:11
+  Rendered wizards/show.html.erb within layouts/application (579.4ms)
+Completed 200 OK in 105387ms (Views: 19632.4ms | ActiveRecord: 0.2ms)
+
+
+Completed 200 OK in 9379ms (Views: 9055.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/wizards" for ::1 at 2019-09-25 09:25:47 -0400
+Processing by WizardsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"MFLve0BC++M206CyrBDi7AJOhpu9YjLj5TEv1N9LDT/sQ3GqnCJM99rRSlEyBEz5WYfffP8A977d7/nrzjtPwA==", "id"=>":id"}
+  [1m[36mWizard Load (0.9ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/wizards_controller.rb:39
+Completed 404 Not Found in 95ms (ActiveRecord: 6.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Wizard with 'id'=:id):
+  
+app/controllers/wizards_controller.rb:39:in `destroy'
+Processing by WizardsController#index as HTML
+  Rendering wizards/index.html.erb within layouts/application
+  [1m[36mWizard Load (1.2ms)[0m  [1m[34mSELECT "wizards".* FROM "wizards"[0m
+  ↳ app/views/wizards/index.html.erb:2
+  Rendered wizards/index.html.erb within layouts/application (117.4ms)
+Completed 200 OK in 502ms (Views: 442.0ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/wizards" for ::1 at 2019-09-25 09:25:50 -0400
+Processing by WizardsController#index as HTML
+  Rendering wizards/index.html.erb within layouts/application
+  [1m[36mWizard Load (0.8ms)[0m  [1m[34mSELECT "wizards".* FROM "wizards"[0m
+  ↳ app/views/wizards/index.html.erb:2
+  Rendered wizards/index.html.erb within layouts/application (31.3ms)
+Completed 200 OK in 414ms (Views: 404.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/wizards/162" for ::1 at 2019-09-25 09:25:52 -0400
+Processing by WizardsController#show as HTML
+  Parameters: {"id"=>"162"}
+  [1m[36mWizard Load (1.0ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 162], ["LIMIT", 1]]
+  ↳ app/controllers/wizards_controller.rb:10
+  Rendering wizards/show.html.erb within layouts/application
+  [1m[36mSpell Load (0.9ms)[0m  [1m[34mSELECT "spells".* FROM "spells" INNER JOIN "favorite_spells" ON "spells"."id" = "favorite_spells"."spell_id" WHERE "favorite_spells"."wizard_id" = ?[0m  [["wizard_id", 162]]
+  ↳ app/views/wizards/show.html.erb:11
+  Rendered wizards/show.html.erb within layouts/application (181.5ms)
+Completed 200 OK in 517ms (Views: 485.3ms | ActiveRecord: 6.7ms)
+
+
+Started DELETE "/wizards/:id" for ::1 at 2019-09-25 09:25:53 -0400
+Processing by WizardsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+Jkt2N6RlSFbKb6Ygozh3wu/kznpENrEgdVBMH7llbkkiLMJAvEiNbcrVHscmE/KUHbK3qtyH5m5C5cPb5XXRg==", "id"=>":id"}
+  [1m[36mWizard Load (0.7ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/wizards_controller.rb:39
+Completed 404 Not Found in 19ms (ActiveRecord: 0.7ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Wizard with 'id'=:id):
+  
+app/controllers/wizards_controller.rb:39:in `destroy'
+Started DELETE "/wizards/:id" for ::1 at 2019-09-25 09:26:13 -0400
+Processing by WizardsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+Jkt2N6RlSFbKb6Ygozh3wu/kznpENrEgdVBMH7llbkkiLMJAvEiNbcrVHscmE/KUHbK3qtyH5m5C5cPb5XXRg==", "id"=>":id"}
+  [1m[36mWizard Load (1.1ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/wizards_controller.rb:39
+Completed 404 Not Found in 114ms (ActiveRecord: 6.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Wizard with 'id'=:id):
+  
+app/controllers/wizards_controller.rb:39:in `destroy'
+Started DELETE "/wizards/:id" for ::1 at 2019-09-25 09:26:18 -0400
+Processing by WizardsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+Jkt2N6RlSFbKb6Ygozh3wu/kznpENrEgdVBMH7llbkkiLMJAvEiNbcrVHscmE/KUHbK3qtyH5m5C5cPb5XXRg==", "id"=>":id"}
+  [1m[36mWizard Load (1.0ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/wizards_controller.rb:39
+Completed 404 Not Found in 22ms (ActiveRecord: 1.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Wizard with 'id'=:id):
+  
+app/controllers/wizards_controller.rb:39:in `destroy'
+Started GET "/wizards/:id" for ::1 at 2019-09-25 09:26:32 -0400
+Processing by WizardsController#show as HTML
+  Parameters: {"id"=>":id"}
+  [1m[36mWizard Load (1.7ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/wizards_controller.rb:10
+Completed 404 Not Found in 129ms (ActiveRecord: 15.9ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Wizard with 'id'=:id):
+  
+app/controllers/wizards_controller.rb:10:in `show'
+Started DELETE "/wizards/:id" for ::1 at 2019-09-25 09:26:40 -0400
+Processing by WizardsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+Jkt2N6RlSFbKb6Ygozh3wu/kznpENrEgdVBMH7llbkkiLMJAvEiNbcrVHscmE/KUHbK3qtyH5m5C5cPb5XXRg==", "id"=>":id"}
+  [1m[36mWizard Load (0.3ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/wizards_controller.rb:39
+Completed 404 Not Found in 304402ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Wizard with 'id'=:id):
+  
+app/controllers/wizards_controller.rb:39:in `destroy'
+Started GET "/wizards/:id" for ::1 at 2019-09-25 09:31:48 -0400
+Processing by WizardsController#show as HTML
+  Parameters: {"id"=>":id"}
+  [1m[36mWizard Load (0.1ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/wizards_controller.rb:10
+Completed 404 Not Found in 6ms (ActiveRecord: 0.7ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Wizard with 'id'=:id):
+  
+app/controllers/wizards_controller.rb:10:in `show'
+Started GET "/wizards" for ::1 at 2019-09-25 09:31:52 -0400
+Processing by WizardsController#index as HTML
+  Rendering wizards/index.html.erb within layouts/application
+  [1m[36mWizard Load (0.3ms)[0m  [1m[34mSELECT "wizards".* FROM "wizards"[0m
+  ↳ app/views/wizards/index.html.erb:2
+  Rendered wizards/index.html.erb within layouts/application (18.3ms)
+Completed 200 OK in 47ms (Views: 45.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/wizards/162" for ::1 at 2019-09-25 09:32:07 -0400
+Processing by WizardsController#show as HTML
+  Parameters: {"id"=>"162"}
+  [1m[36mWizard Load (0.3ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 162], ["LIMIT", 1]]
+  ↳ app/controllers/wizards_controller.rb:10
+  Rendering wizards/show.html.erb within layouts/application
+  [1m[36mSpell Load (0.3ms)[0m  [1m[34mSELECT "spells".* FROM "spells" INNER JOIN "favorite_spells" ON "spells"."id" = "favorite_spells"."spell_id" WHERE "favorite_spells"."wizard_id" = ?[0m  [["wizard_id", 162]]
+  ↳ app/views/wizards/show.html.erb:11
+  Rendered wizards/show.html.erb within layouts/application (31.5ms)
+Completed 200 OK in 84ms (Views: 79.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/wizards/162/edit" for ::1 at 2019-09-25 09:32:08 -0400
+Processing by WizardsController#edit as HTML
+  Parameters: {"id"=>"162"}
+  [1m[36mWizard Load (0.2ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 162], ["LIMIT", 1]]
+  ↳ app/controllers/wizards_controller.rb:26
+  Rendering wizards/edit.html.erb within layouts/application
+  Rendered wizards/edit.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 40ms (Views: 36.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/wizards/162" for ::1 at 2019-09-25 09:35:46 -0400
+Processing by WizardsController#show as HTML
+  Parameters: {"id"=>"162"}
+  [1m[36mWizard Load (0.2ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 162], ["LIMIT", 1]]
+  ↳ app/controllers/wizards_controller.rb:10
+  Rendering wizards/show.html.erb within layouts/application
+  [1m[36mSpell Load (0.2ms)[0m  [1m[34mSELECT "spells".* FROM "spells" INNER JOIN "favorite_spells" ON "spells"."id" = "favorite_spells"."spell_id" WHERE "favorite_spells"."wizard_id" = ?[0m  [["wizard_id", 162]]
+  ↳ app/views/wizards/show.html.erb:11
+  Rendered wizards/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 26ms (Views: 22.7ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/wizards/" for ::1 at 2019-09-25 09:35:48 -0400
+  
+ActionController::RoutingError (No route matches [DELETE] "/wizards"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/wizards/162" for ::1 at 2019-09-25 09:37:44 -0400
+Processing by WizardsController#show as HTML
+  Parameters: {"id"=>"162"}
+  [1m[36mWizard Load (0.2ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 162], ["LIMIT", 1]]
+  ↳ app/controllers/wizards_controller.rb:10
+  Rendering wizards/show.html.erb within layouts/application
+  [1m[36mSpell Load (0.2ms)[0m  [1m[34mSELECT "spells".* FROM "spells" INNER JOIN "favorite_spells" ON "spells"."id" = "favorite_spells"."spell_id" WHERE "favorite_spells"."wizard_id" = ?[0m  [["wizard_id", 162]]
+  ↳ app/views/wizards/show.html.erb:12
+  Rendered wizards/show.html.erb within layouts/application (32012.5ms)
+Started GET "/wizards/162" for ::1 at 2019-09-25 09:38:16 -0400
+Processing by WizardsController#show as HTML
+  Parameters: {"id"=>"162"}
+  [1m[36mWizard Load (0.2ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 162], ["LIMIT", 1]]
+  ↳ app/controllers/wizards_controller.rb:10
+  Rendering wizards/show.html.erb within layouts/application
+  Rendered wizards/show.html.erb within layouts/application (3689.2ms)
+Completed 500 Internal Server Error in 3703ms (ActiveRecord: 0.2ms)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `_app_views_wizards_show_html_erb___3944892817849404013_70298226499440'
+app/views/wizards/show.html.erb:8:in `_app_views_wizards_show_html_erb___3944892817849404013_70298226499440'
+Completed 200 OK in 36821ms (Views: 36814.6ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/wizards/:id" for ::1 at 2019-09-25 09:38:33 -0400
+Processing by WizardsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"UORSF1h2TCVWcHNU0RKetLtYABb0bRA9e28AfkZttL+M9czGhBb7MbpymbdPBjCh4JFZ8bYP1WBDsdZBVx32QA==", "id"=>":id"}
+  [1m[36mWizard Load (0.4ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/wizards_controller.rb:39
+Completed 404 Not Found in 8693ms (ActiveRecord: 0.4ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Wizard with 'id'=:id):
+  
+app/controllers/wizards_controller.rb:39:in `destroy'
+Started GET "/wizards/:id" for ::1 at 2019-09-25 09:39:22 -0400
+Processing by WizardsController#show as HTML
+  Parameters: {"id"=>":id"}
+  [1m[36mWizard Load (0.1ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/wizards_controller.rb:10
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Wizard with 'id'=:id):
+  
+app/controllers/wizards_controller.rb:10:in `show'
+Started DELETE "/wizards/:id" for ::1 at 2019-09-25 09:39:38 -0400
+Processing by WizardsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"UORSF1h2TCVWcHNU0RKetLtYABb0bRA9e28AfkZttL+M9czGhBb7MbpymbdPBjCh4JFZ8bYP1WBDsdZBVx32QA==", "id"=>":id"}
+  [1m[36mWizard Load (0.2ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ (byebug):1
+  [1m[36mCACHE Wizard Load (0.0ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/wizards_controller.rb:39
+Completed 404 Not Found in 30218ms (ActiveRecord: 1.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Wizard with 'id'=:id):
+  
+app/controllers/wizards_controller.rb:39:in `destroy'
+Started GET "/wizards/:id" for ::1 at 2019-09-25 09:40:18 -0400
+Processing by WizardsController#show as HTML
+  Parameters: {"id"=>":id"}
+  [1m[36mWizard Load (0.1ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/wizards_controller.rb:10
+Completed 404 Not Found in 7ms (ActiveRecord: 0.7ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Wizard with 'id'=:id):
+  
+app/controllers/wizards_controller.rb:10:in `show'
+Started GET "/wizards" for ::1 at 2019-09-25 09:40:20 -0400
+Processing by WizardsController#index as HTML
+  Rendering wizards/index.html.erb within layouts/application
+  [1m[36mWizard Load (0.3ms)[0m  [1m[34mSELECT "wizards".* FROM "wizards"[0m
+  ↳ app/views/wizards/index.html.erb:2
+  Rendered wizards/index.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 40ms (Views: 37.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/wizards/163" for ::1 at 2019-09-25 09:40:23 -0400
+Processing by WizardsController#show as HTML
+  Parameters: {"id"=>"163"}
+  [1m[36mWizard Load (0.2ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 163], ["LIMIT", 1]]
+  ↳ app/controllers/wizards_controller.rb:10
+  Rendering wizards/show.html.erb within layouts/application
+  [1m[36mSpell Load (0.2ms)[0m  [1m[34mSELECT "spells".* FROM "spells" INNER JOIN "favorite_spells" ON "spells"."id" = "favorite_spells"."spell_id" WHERE "favorite_spells"."wizard_id" = ?[0m  [["wizard_id", 163]]
+  ↳ app/views/wizards/show.html.erb:12
+  Rendered wizards/show.html.erb within layouts/application (47465.3ms)
+Completed 200 OK in 47496ms (Views: 47490.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/wizards" for ::1 at 2019-09-25 09:41:30 -0400
+Processing by WizardsController#index as HTML
+  Rendering wizards/index.html.erb within layouts/application
+  [1m[36mWizard Load (0.3ms)[0m  [1m[34mSELECT "wizards".* FROM "wizards"[0m
+  ↳ app/views/wizards/index.html.erb:2
+  Rendered wizards/index.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 36ms (Views: 30.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/wizards/162" for ::1 at 2019-09-25 09:41:31 -0400
+Processing by WizardsController#show as HTML
+  Parameters: {"id"=>"162"}
+  [1m[36mWizard Load (0.3ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 162], ["LIMIT", 1]]
+  ↳ app/controllers/wizards_controller.rb:10
+  Rendering wizards/show.html.erb within layouts/application
+  [1m[36mSpell Load (0.2ms)[0m  [1m[34mSELECT "spells".* FROM "spells" INNER JOIN "favorite_spells" ON "spells"."id" = "favorite_spells"."spell_id" WHERE "favorite_spells"."wizard_id" = ?[0m  [["wizard_id", 162]]
+  ↳ app/views/wizards/show.html.erb:12
+  Rendered wizards/show.html.erb within layouts/application (10789.6ms)
+Completed 200 OK in 10828ms (Views: 10821.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/wizards/162/edit" for ::1 at 2019-09-25 09:41:46 -0400
+Processing by WizardsController#edit as HTML
+  Parameters: {"id"=>"162"}
+  [1m[36mWizard Load (0.2ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 162], ["LIMIT", 1]]
+  ↳ app/controllers/wizards_controller.rb:26
+  Rendering wizards/edit.html.erb within layouts/application
+  Rendered wizards/edit.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 40ms (Views: 35.6ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/wizards/162" for ::1 at 2019-09-25 09:41:50 -0400
+Processing by WizardsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zQo+H5/T3TbaSdFpMgU+iuVhJFmyZy29jsWPAzp7CU7JA9/4J4iutQFIE9qtigpq1T82UcMadNaMfpBmznUzlw==", "wizard"=>{"name"=>"Harry Potter", "age"=>"18", "house"=>"Gryffindor", "image"=>"http://www.univers-series.com/wp-content/uploads/2016/02/harrypotter.jpeg"}, "commit"=>"submit", "id"=>"162"}
+  [1m[36mWizard Load (0.3ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 162], ["LIMIT", 1]]
+  ↳ app/controllers/wizards_controller.rb:32
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/wizards_controller.rb:33
+  [1m[36mWizard Update (0.8ms)[0m  [1m[33mUPDATE "wizards" SET "age" = ?, "updated_at" = ? WHERE "wizards"."id" = ?[0m  [["age", 18], ["updated_at", "2019-09-25 13:41:50.216164"], ["id", 162]]
+  ↳ app/controllers/wizards_controller.rb:33
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/wizards_controller.rb:33
+Redirected to http://localhost:3000/wizards/162
+Completed 302 Found in 10ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/wizards/162" for ::1 at 2019-09-25 09:41:50 -0400
+Processing by WizardsController#show as HTML
+  Parameters: {"id"=>"162"}
+  [1m[36mWizard Load (0.2ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 162], ["LIMIT", 1]]
+  ↳ app/controllers/wizards_controller.rb:10
+  Rendering wizards/show.html.erb within layouts/application
+  [1m[36mSpell Load (0.2ms)[0m  [1m[34mSELECT "spells".* FROM "spells" INNER JOIN "favorite_spells" ON "spells"."id" = "favorite_spells"."spell_id" WHERE "favorite_spells"."wizard_id" = ?[0m  [["wizard_id", 162]]
+  ↳ app/views/wizards/show.html.erb:12
+  Rendered wizards/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 24ms (Views: 21.9ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/wizards/" for ::1 at 2019-09-25 09:41:52 -0400
+  
+ActionController::RoutingError (No route matches [DELETE] "/wizards"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started DELETE "/wizards/" for ::1 at 2019-09-25 09:42:47 -0400
+  
+ActionController::RoutingError (No route matches [DELETE] "/wizards"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started DELETE "/wizards/" for ::1 at 2019-09-25 09:43:19 -0400
+  
+ActionController::RoutingError (No route matches [DELETE] "/wizards"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started DELETE "/wizards/" for ::1 at 2019-09-25 09:43:30 -0400
+  
+ActionController::RoutingError (No route matches [DELETE] "/wizards"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started DELETE "/wizards/" for ::1 at 2019-09-25 09:43:37 -0400
+  
+ActionController::RoutingError (No route matches [DELETE] "/wizards"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started DELETE "/wizards/" for ::1 at 2019-09-25 09:43:41 -0400
+  
+ActionController::RoutingError (No route matches [DELETE] "/wizards"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started DELETE "/wizards/" for ::1 at 2019-09-25 09:43:43 -0400
+  
+ActionController::RoutingError (No route matches [DELETE] "/wizards"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/wizards" for ::1 at 2019-09-25 09:44:12 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatironschool/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by WizardsController#index as HTML
+  Rendering wizards/index.html.erb within layouts/application
+  [1m[36mWizard Load (0.3ms)[0m  [1m[34mSELECT "wizards".* FROM "wizards"[0m
+  ↳ app/views/wizards/index.html.erb:2
+  Rendered wizards/index.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 234ms (Views: 217.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/wizards/162" for ::1 at 2019-09-25 09:44:14 -0400
+Processing by WizardsController#show as HTML
+  Parameters: {"id"=>"162"}
+  [1m[36mWizard Load (0.3ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 162], ["LIMIT", 1]]
+  ↳ app/controllers/wizards_controller.rb:10
+  Rendering wizards/show.html.erb within layouts/application
+  [1m[36mSpell Load (0.3ms)[0m  [1m[34mSELECT "spells".* FROM "spells" INNER JOIN "favorite_spells" ON "spells"."id" = "favorite_spells"."spell_id" WHERE "favorite_spells"."wizard_id" = ?[0m  [["wizard_id", 162]]
+  ↳ app/views/wizards/show.html.erb:12
+  Rendered wizards/show.html.erb within layouts/application (57.4ms)
+Completed 200 OK in 86ms (Views: 76.7ms | ActiveRecord: 2.1ms)
+
+
+Started DELETE "/wizards/162" for ::1 at 2019-09-25 09:44:15 -0400
+Processing by WizardsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Cd2/riKBwtzDSj/as+J/l/BVGb8Lw04D61TsJm1HTHHVzCF//uF1yC9I1Tkt9tGCq5xAWEmhi17TijoZfDcOjg==", "id"=>"162"}
+  [1m[36mWizard Load (0.2ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 162], ["LIMIT", 1]]
+  ↳ app/controllers/wizards_controller.rb:38
+  [1m[36mFavoriteSpell Load (0.3ms)[0m  [1m[34mSELECT "favorite_spells".* FROM "favorite_spells" WHERE "favorite_spells"."wizard_id" = ?[0m  [["wizard_id", 162]]
+  ↳ app/controllers/wizards_controller.rb:39
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/wizards_controller.rb:39
+  [1m[36mFavoriteSpell Destroy (1.2ms)[0m  [1m[31mDELETE FROM "favorite_spells" WHERE "favorite_spells"."id" = ?[0m  [["id", 77]]
+  ↳ app/controllers/wizards_controller.rb:39
+  [1m[36mFavoriteSpell Destroy (0.2ms)[0m  [1m[31mDELETE FROM "favorite_spells" WHERE "favorite_spells"."id" = ?[0m  [["id", 78]]
+  ↳ app/controllers/wizards_controller.rb:39
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/wizards_controller.rb:39
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/wizards_controller.rb:40
+  [1m[36mWizard Destroy (0.6ms)[0m  [1m[31mDELETE FROM "wizards" WHERE "wizards"."id" = ?[0m  [["id", 162]]
+  ↳ app/controllers/wizards_controller.rb:40
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/wizards_controller.rb:40
+Redirected to http://localhost:3000/wizards
+Completed 302 Found in 27ms (ActiveRecord: 5.4ms)
+
+
+Started GET "/wizards" for ::1 at 2019-09-25 09:44:15 -0400
+Processing by WizardsController#index as HTML
+  Rendering wizards/index.html.erb within layouts/application
+  [1m[36mWizard Load (0.2ms)[0m  [1m[34mSELECT "wizards".* FROM "wizards"[0m
+  ↳ app/views/wizards/index.html.erb:2
+  Rendered wizards/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 24ms (Views: 21.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/wizards" for ::1 at 2019-09-25 09:45:32 -0400
+Processing by WizardsController#index as HTML
+  Rendering wizards/index.html.erb within layouts/application
+  [1m[36mWizard Load (0.2ms)[0m  [1m[34mSELECT "wizards".* FROM "wizards"[0m
+  ↳ app/views/wizards/index.html.erb:2
+  Rendered wizards/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 28ms (Views: 26.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/wizards/164" for ::1 at 2019-09-25 09:45:33 -0400
+Processing by WizardsController#show as HTML
+  Parameters: {"id"=>"164"}
+  [1m[36mWizard Load (0.2ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 164], ["LIMIT", 1]]
+  ↳ app/controllers/wizards_controller.rb:10
+  Rendering wizards/show.html.erb within layouts/application
+  [1m[36mSpell Load (0.2ms)[0m  [1m[34mSELECT "spells".* FROM "spells" INNER JOIN "favorite_spells" ON "spells"."id" = "favorite_spells"."spell_id" WHERE "favorite_spells"."wizard_id" = ?[0m  [["wizard_id", 164]]
+  ↳ app/views/wizards/show.html.erb:12
+  Rendered wizards/show.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 43ms (Views: 39.0ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/wizards/164" for ::1 at 2019-09-25 09:45:35 -0400
+Processing by WizardsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"rwHxbAAAtkkD+FPgYnPmjEV7+DJarbtEdhPj8mIr1Z1zEG+93GABXe/6uQP8Z0iZHrKh1RjPfhlOzTXNc1uXYg==", "id"=>"164"}
+  [1m[36mWizard Load (0.2ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 164], ["LIMIT", 1]]
+  ↳ app/controllers/wizards_controller.rb:38
+  [1m[36mFavoriteSpell Load (0.3ms)[0m  [1m[34mSELECT "favorite_spells".* FROM "favorite_spells" WHERE "favorite_spells"."wizard_id" = ?[0m  [["wizard_id", 164]]
+  ↳ app/controllers/wizards_controller.rb:39
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/wizards_controller.rb:39
+  [1m[36mFavoriteSpell Destroy (0.9ms)[0m  [1m[31mDELETE FROM "favorite_spells" WHERE "favorite_spells"."id" = ?[0m  [["id", 86]]
+  ↳ app/controllers/wizards_controller.rb:39
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/wizards_controller.rb:39
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/wizards_controller.rb:40
+  [1m[36mWizard Destroy (0.6ms)[0m  [1m[31mDELETE FROM "wizards" WHERE "wizards"."id" = ?[0m  [["id", 164]]
+  ↳ app/controllers/wizards_controller.rb:40
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/wizards_controller.rb:40
+Redirected to http://localhost:3000/wizards
+Completed 302 Found in 14ms (ActiveRecord: 5.7ms)
+
+
+Started GET "/wizards" for ::1 at 2019-09-25 09:45:35 -0400
+Processing by WizardsController#index as HTML
+  Rendering wizards/index.html.erb within layouts/application
+  [1m[36mWizard Load (0.2ms)[0m  [1m[34mSELECT "wizards".* FROM "wizards"[0m
+  ↳ app/views/wizards/index.html.erb:2
+  Rendered wizards/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 29ms (Views: 26.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/wizards" for ::1 at 2019-09-25 09:49:46 -0400
+Processing by WizardsController#index as HTML
+  Rendering wizards/index.html.erb within layouts/application
+  [1m[36mWizard Load (0.1ms)[0m  [1m[34mSELECT "wizards".* FROM "wizards"[0m
+  ↳ app/views/wizards/index.html.erb:2
+  Rendered wizards/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 43ms (Views: 40.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/spells" for ::1 at 2019-09-25 09:49:52 -0400
+Processing by SpellsController#index as HTML
+  [1m[36mSpell Load (0.3ms)[0m  [1m[34mSELECT "spells".* FROM "spells"[0m
+  ↳ app/controllers/spells_controller.rb:4
+  Rendering spells/index.html.erb within layouts/application
+  Rendered spells/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 69ms (Views: 65.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/spells/new" for ::1 at 2019-09-25 09:49:55 -0400
+Processing by SpellsController#new as HTML
+  Rendering spells/new.html.erb within layouts/application
+  Rendered spells/new.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 33ms (Views: 28.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/spells" for ::1 at 2019-09-25 09:49:59 -0400
+Processing by SpellsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nl7UyzKsg5ocbJ/gb8hBTmvnPFgFf4mhgdgKSTaI7nVN/H+tFO9GJJcMF3rJ6OIT5pYlMgbzhoI9EXOOHLGlQw==", "spell"=>{"name"=>"we", "description"=>"sgr"}, "commit"=>"submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/spells_controller.rb:20
+  [1m[36mSpell Create (1.2ms)[0m  [1m[32mINSERT INTO "spells" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "we"], ["description", "sgr"], ["created_at", "2019-09-25 13:49:59.137642"], ["updated_at", "2019-09-25 13:49:59.137642"]]
+  ↳ app/controllers/spells_controller.rb:20
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/spells_controller.rb:20
+Redirected to http://localhost:3000/spells/246
+Completed 302 Found in 9ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/spells/246" for ::1 at 2019-09-25 09:49:59 -0400
+Processing by SpellsController#show as HTML
+  Parameters: {"id"=>"246"}
+  [1m[36mSpell Load (0.3ms)[0m  [1m[34mSELECT  "spells".* FROM "spells" WHERE "spells"."id" = ? LIMIT ?[0m  [["id", 246], ["LIMIT", 1]]
+  ↳ app/controllers/spells_controller.rb:8
+  [1m[36mFavoriteSpell Load (0.2ms)[0m  [1m[34mSELECT "favorite_spells".* FROM "favorite_spells"[0m
+  ↳ app/controllers/spells_controller.rb:9
+  Rendering spells/show.html.erb within layouts/application
+  Rendered spells/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 29ms (Views: 24.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/spells" for ::1 at 2019-09-25 09:53:43 -0400
+Processing by SpellsController#index as HTML
+  [1m[36mSpell Load (0.2ms)[0m  [1m[34mSELECT "spells".* FROM "spells"[0m
+  ↳ app/controllers/spells_controller.rb:4
+  Rendering spells/index.html.erb within layouts/application
+  Rendered spells/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 36ms (Views: 32.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/spells/240" for ::1 at 2019-09-25 09:53:44 -0400
+Processing by SpellsController#show as HTML
+  Parameters: {"id"=>"240"}
+  [1m[36mSpell Load (0.2ms)[0m  [1m[34mSELECT  "spells".* FROM "spells" WHERE "spells"."id" = ? LIMIT ?[0m  [["id", 240], ["LIMIT", 1]]
+  ↳ app/controllers/spells_controller.rb:8
+  [1m[36mFavoriteSpell Load (0.3ms)[0m  [1m[34mSELECT "favorite_spells".* FROM "favorite_spells"[0m
+  ↳ app/controllers/spells_controller.rb:9
+  Rendering spells/show.html.erb within layouts/application
+  [1m[36mWizard Load (0.1ms)[0m  [1m[34mSELECT "wizards".* FROM "wizards"[0m
+  ↳ app/views/spells/show.html.erb:6
+  Rendered spells/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 44ms (Views: 39.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/wizards" for ::1 at 2019-09-25 09:53:53 -0400
+Processing by WizardsController#index as HTML
+  Rendering wizards/index.html.erb within layouts/application
+  [1m[36mWizard Load (0.2ms)[0m  [1m[34mSELECT "wizards".* FROM "wizards"[0m
+  ↳ app/views/wizards/index.html.erb:2
+  Rendered wizards/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 32ms (Views: 29.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/wizards" for ::1 at 2019-09-25 09:55:43 -0400
+Processing by WizardsController#index as HTML
+  Rendering wizards/index.html.erb within layouts/application
+  Rendered wizards/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/flatironschool/Documents/RAILS RAILS RAILS/rails-debugging-practice/app/views/wizards/index.html.erb:6: syntax error, unexpected tINTEGER, expecting end
+/Users/flatironschool/Documents/RAILS RAILS RAILS/rails-debugging-practice/app/views/wizards/index.html.erb:18: unterminated string meets end of file
+          end
+              ^
+/Users/flatironschool/Documents/RAILS RAILS RAILS/rails-debugging-practice/app/views/wizards/index.html.erb:18: syntax error, unexpected end-of-input, expecting end):
+  
+app/views/wizards/index.html.erb:6: syntax error, unexpected tINTEGER, expecting end
+app/views/wizards/index.html.erb:18: unterminated string meets end of file
+app/views/wizards/index.html.erb:18: syntax error, unexpected end-of-input, expecting end
+Started GET "/wizards" for ::1 at 2019-09-25 09:56:02 -0400
+Processing by WizardsController#index as HTML
+  Rendering wizards/index.html.erb within layouts/application
+  Rendered wizards/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/flatironschool/Documents/RAILS RAILS RAILS/rails-debugging-practice/app/views/wizards/index.html.erb:6: syntax error, unexpected tINTEGER, expecting ')'
+/Users/flatironschool/Documents/RAILS RAILS RAILS/rails-debugging-practice/app/views/wizards/index.html.erb:18: unterminated string meets end of file
+          end
+              ^
+/Users/flatironschool/Documents/RAILS RAILS RAILS/rails-debugging-practice/app/views/wizards/index.html.erb:18: syntax error, unexpected end-of-input, expecting ')'):
+  
+app/views/wizards/index.html.erb:6: syntax error, unexpected tINTEGER, expecting ')'
+app/views/wizards/index.html.erb:18: unterminated string meets end of file
+app/views/wizards/index.html.erb:18: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/wizards" for ::1 at 2019-09-25 09:56:17 -0400
+Processing by WizardsController#index as HTML
+  Rendering wizards/index.html.erb within layouts/application
+  [1m[36mWizard Load (0.3ms)[0m  [1m[34mSELECT "wizards".* FROM "wizards"[0m
+  ↳ app/views/wizards/index.html.erb:3
+  Rendered wizards/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 25ms (Views: 23.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/wizards/163" for ::1 at 2019-09-25 09:56:19 -0400
+Processing by WizardsController#show as HTML
+  Parameters: {"id"=>"163"}
+  [1m[36mWizard Load (2.0ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 163], ["LIMIT", 1]]
+  ↳ app/controllers/wizards_controller.rb:10
+  Rendering wizards/show.html.erb within layouts/application
+  [1m[36mSpell Load (0.3ms)[0m  [1m[34mSELECT "spells".* FROM "spells" INNER JOIN "favorite_spells" ON "spells"."id" = "favorite_spells"."spell_id" WHERE "favorite_spells"."wizard_id" = ?[0m  [["wizard_id", 163]]
+  ↳ app/views/wizards/show.html.erb:12
+  Rendered wizards/show.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 43ms (Views: 36.3ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/wizards/163" for ::1 at 2019-09-25 09:56:34 -0400
+Processing by WizardsController#show as HTML
+  Parameters: {"id"=>"163"}
+  [1m[36mWizard Load (0.2ms)[0m  [1m[34mSELECT  "wizards".* FROM "wizards" WHERE "wizards"."id" = ? LIMIT ?[0m  [["id", 163], ["LIMIT", 1]]
+  ↳ app/controllers/wizards_controller.rb:10
+  Rendering wizards/show.html.erb within layouts/application
+  [1m[36mSpell Load (0.2ms)[0m  [1m[34mSELECT "spells".* FROM "spells" INNER JOIN "favorite_spells" ON "spells"."id" = "favorite_spells"."spell_id" WHERE "favorite_spells"."wizard_id" = ?[0m  [["wizard_id", 163]]
+  ↳ app/views/wizards/show.html.erb:12
+  Rendered wizards/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 49ms (Views: 46.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/wizards" for ::1 at 2019-09-25 09:56:37 -0400
+Processing by WizardsController#index as HTML
+  Rendering wizards/index.html.erb within layouts/application
+  Rendered wizards/index.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/flatironschool/Documents/RAILS RAILS RAILS/rails-debugging-practice/app/views/wizards/index.html.erb:6: syntax error, unexpected tINTEGER, expecting ')'
+/Users/flatironschool/Documents/RAILS RAILS RAILS/rails-debugging-practice/app/views/wizards/index.html.erb:18: unterminated string meets end of file
+          end
+              ^
+/Users/flatironschool/Documents/RAILS RAILS RAILS/rails-debugging-practice/app/views/wizards/index.html.erb:18: syntax error, unexpected end-of-input, expecting ')'):
+  
+app/views/wizards/index.html.erb:6: syntax error, unexpected tINTEGER, expecting ')'
+app/views/wizards/index.html.erb:18: unterminated string meets end of file
+app/views/wizards/index.html.erb:18: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/wizards" for ::1 at 2019-09-25 09:57:42 -0400
+Processing by WizardsController#index as HTML
+  Rendering wizards/index.html.erb within layouts/application
+  [1m[36mWizard Load (0.2ms)[0m  [1m[34mSELECT "wizards".* FROM "wizards"[0m
+  ↳ app/views/wizards/index.html.erb:4
+  Rendered wizards/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 38ms (Views: 35.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/favoritespells" for ::1 at 2019-09-25 09:57:45 -0400
+Processing by FavoriteSpellsController#index as HTML
+  Rendering favorite_spells/index.html.erb within layouts/application
+  Rendered favorite_spells/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 31ms (Views: 29.5ms | ActiveRecord: 0.0ms)
+
+

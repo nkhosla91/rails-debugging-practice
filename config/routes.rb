@@ -6,10 +6,10 @@ Rails.application.routes.draw do
   get 'wizards/:id', to: 'wizards#show', as: 'wizard'
   get 'wizards/:id/edit', to: 'wizards#edit', as: 'edit_wizard'
   # get 'wizards/:id/addspell', to: 'wizards#addspell', as: 'add_spell_wizard'
-  delete 'wizards/:id', to: 'wizards#destroy', as: 'destroy_wizard'
   post 'wizards', to: 'wizards#create'
   patch 'wizards/:id', to: 'wizards#update'
   get 'wizards/:id/addspell', to: 'favorite_spells#new', as: 'add_spell_wizard'
+  delete 'wizards/:id', to: 'wizards#destroy', as: 'destroy_wizard'
 
 
 

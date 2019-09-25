@@ -3,9 +3,10 @@
 <div id="show_img"><%= image_tag(@wizard.image, id: "show_pic", size: "600x400")%></div><br /><br />
 
 <%=link_to 'EDIT WIZARD', edit_wizard_path%>
-<br</br>
-<%=link_to 'DELETE WIZARD', destroy_wizard_path%>
-<br</br>
+<br></br>
+
+<%=link_to('DELETE WIZARD', wizard_path(@wizard), method: :delete)%>
+<br></br>
 <%=link_to 'ADD FAVORITE SPELL', add_spell_wizard_path%>
 
 <% @wizard.spells.each do |spell| %>
